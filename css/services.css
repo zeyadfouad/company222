@@ -93,7 +93,7 @@ transform: scale(1.05);
 }
 
 
-@media (min-width: 480px)(max-width: 500px) {
+@media (min-width: 480px) and (max-width: 500px) {
 
   .card{
     position: relative;
