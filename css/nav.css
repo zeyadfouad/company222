@@ -98,12 +98,12 @@ nav {
   
   
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
-    nav{
-        padding-top: 20px;
-        padding-bottom: 20px;
-
+    nav {
+           position: static;
+           margin: 0;
+           padding: 0;
     }
 
     
