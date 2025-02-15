@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "EL marisi";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+
+body {
+    font-family: "EL marisi", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.card-back {
+    --background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%, #f7ba2b, #ea5358 ) border-box;
+    width: 100%;
+    height: 140vh;
+    padding: 4px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    border: 3px solid transparent;
+  
+    z-index: 1;
+   }
+   
+   .card-back::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+   .card-info {
+    --color: #181818;
+    background: var(--color);
+    color: white;
+    display: flex;
+    flex-direction: column; /* لجعل العناصر تظهر تحت بعضها */
+    align-items:center; /* لمحاذاة العناصر إلى اليسار */
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   .project-item ,.project-item3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .project-item img ,.project-item3 img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px ridge  #FFA500;
+    margin-left: 36px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.451) /* تأثير الظل */
+  
+  }
+  
+  .project-item3 img{
+    border: 2px solid #ea5358;
+  }
+  
+  .project-item2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .project-item2 img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px ridge #FFA500;
+    margin-left: 36px;
+    margin-top: 30px;
+    margin-right: 500px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.451) /* تأثير الظل */
+  
+  }
+  
+  .project-text {
+    width: 50%;
+    text-align: right;
+    color: white;
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: "EL marisi", Arial, sans-serif;
+    margin-bottom: 30px;
+  
+  }
+  
+  
+  
+  .project-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+    margin-right: 0;
+  
+  }
+  
+  .project-text p {
+    margin-bottom: 10px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "EL marisi";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+
+body {
+    font-family: "EL marisi", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 0px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 1000; /* للتأكد من أن الشريط يظهر فوق العناصر الأخرى */
+    
+}
+
+.re {
+    color: #fff;
+    margin: 0 15px;
+    padding-right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+    
+}
+
+.re:hover {
+    transform: translateY(-3px);
+  }
+
+  
+
+.img2{
+    height: 100px; /* يمكنك تغيير الحجم حسب الحاجة */
+    margin-right: 20px;
+    float: right;
+    
+}
+
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+    margin-right: 13cm;
+   }
+   
+   .input {
+    width: 100%;
+    height: 50px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color : #333;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-family: "EL marisi", Arial, sans-serif ;
+   }
+   
+   .input::placeholder {
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+   }
+   
+   .input:focus, input:hover{
+    outline: none;
+    border-color: #FFA500;
+    background-color: #fff;
+  
+   }
+   
+   .icon5{
+    position: absolute;
+    left: 1rem;
+    fill: white;
+    width: 3rem;
+    height: 1rem;
+   }
+    
+  
+  
+
+@media (max-width: 500px) {
+
+    nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    
+    
+}

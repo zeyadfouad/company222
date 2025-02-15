@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "EL marisi";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+
+body {
+    font-family: "EL marisi", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.card {
+    width: 100%;
+    max-width: 95%;
+    height: 200px;
+    background: #353535;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: 0.5s ease-in-out;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+}
+
+.card:hover {
+cursor: pointer;
+transform: scale(1.05);
+}
+
+.text-box {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+}
+
+.icon2{
+    color: white;
+    font-size: 100px;
+    float: right;
+    padding-bottom: 25px;
+    padding-right: 10px;
+ 
+}
+
+.icon3{
+  color: white;
+  font-size: 110px;
+  float: right;
+  padding-bottom: 25px;
+  padding-right: 20px;
+
+}
+
+.icon4{
+  color: white;
+  font-size: 75px;
+  float: right;
+  padding-bottom: 25px;
+  padding-right: 20px;
+
+}
+
+
+.card .text-box .text-content h3 , p {
+   padding-top: 35px;
+   padding-right: 4cm;
+}
+
+.card .text-box .text-content2 h3 , p {
+  padding-top: 37px;
+  padding-right: 4cm;
+}
+
+.card .text-box .text-content3 h3 , p {
+  padding-top: 15px;
+  padding-right: 4cm;
+}
+
+.services, .projects {
+  margin-top: 40px;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 480px) and (max-width: 570px) {
+
+  .card{
+    position: relative;
+    padding-top: 200px;
+    text-align: center;
+  }
+
+  .icon2 ,.icon3{
+    position: absolute;
+    margin-bottom: 10cm;
+    padding-left: 80px;
+    transform: translate(7%,0%);
+
+    
+  }
+
+  .card .text-box .text-content h3{
+    padding-top: 180px;
+    padding-right: 77px;
+ }
+
+ .card .text-box .text-content p {
+  padding-top: 10px;
+  padding-right: 75px;
+  margin-bottom: 270px;
+ }
+
+ .text-box {
+  margin-left: 70px;
+ }
+ 
+
+ .icon3{
+  position: absolute;
+  padding-left: 130px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  top: 0;
+
+  
+}
+
+.card .text-box .text-content2 h3,
+.card .text-box .text-content2 p {
+  padding-right: 1.9cm;
+  margin-top: 50px; /* إضافة مسافة من الأعلى لتجنب التداخل */
+}
+
+.card .text-box .text-content2 p {
+  padding-right: 1.9cm;
+  margin-top: 1px; /* إضافة مسافة من الأعلى لتجنب التداخل */
+
+  margin-bottom: 270px;
+}
+.card .text-box .text-content2 h3{
+  margin-top: 170px;
+}
+  
+}
